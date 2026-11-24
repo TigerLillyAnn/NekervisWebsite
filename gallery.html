@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pictures | Your Name</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="gallery-page">
+
+  <header>
+    <nav class="container wide-container">
+      <a href="index.html" class="logo">&larr; Your Name</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#cv">CV</a></li>
+        <li><a href="index.html#media">YouTube & Posts</a></li>
+        <li><a href="gallery.html" class="nav-highlight">Pictures</a></li>
+        <li><button id="theme-toggle" aria-label="Toggle Dark Mode">Dark Mode</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container wide-container">
+    <section class="gallery-hero">
+      <div class="gallery-hero-inner">
+        <span class="gallery-kicker">VISUAL ARCHIVE &bull; SCRAPBOOK &bull; COLLECTIONS</span>
+        <h1>Everything I've Been Collecting</h1>
+        <p>Fieldwork, travel, snapshots, moodboards, and random things that caught my eye. Click any photo to expand.</p>
+
+        <!-- Category Filters -->
+        <div class="filter-bar" role="group" aria-label="Filter photos by category">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="travel">Travel</button>
+          <button class="filter-btn" data-filter="lab">Lab & Research</button>
+          <button class="filter-btn" data-filter="film">Film & Art</button>
+          <button class="filter-btn" data-filter="life">Everyday</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Maximalist Masonry Wall -->
+    <section class="masonry-wall" id="masonry-wall">
+
+      <!-- Photo 1 -->
+      <figure class="photo-item" data-category="life">
+        <img src="profile.jpg" alt="Profile snapshot">
+        <figcaption>
+          <span class="photo-tag">Everyday</span>
+          <p class="photo-title">Profile Snapshot</p>
+          <span class="photo-meta">2026</span>
+        </figcaption>
+      </figure>
+
+      <!-- Photo 2 (Replace src with your own images/photo2.jpg) -->
+      <figure class="photo-item" data-category="travel">
+        <img src="images/photo2.jpg" alt="Describe your photo here">
+        <figcaption>
+          <span class="photo-tag">Travel</span>
+          <p class="photo-title">Weekend Trip</p>
+          <span class="photo-meta">Oct 2025 &bull; Location</span>
+        </figcaption>
+      </figure>
+
+      <!-- Photo 3 -->
+      <figure class="photo-item" data-category="lab">
+        <img src="images/photo3.jpg" alt="Describe your photo here">
+        <figcaption>
+          <span class="photo-tag">Lab & Research</span>
+          <p class="photo-title">Late Night Setup</p>
+          <span class="photo-meta">Jan 2026</span>
+        </figcaption>
+      </figure>
+
+      <!-- Photo 4 -->
+      <figure class="photo-item" data-category="film">
+        <img src="images/photo4.jpg" alt="Describe your photo here">
+        <figcaption>
+          <span class="photo-tag">Film & Art</span>
+          <p class="photo-title">35mm Roll #4</p>
+          <span class="photo-meta">Summer 2025</span>
+        </figcaption>
+      </figure>
+
+      <!-- Photo 5 -->
+      <figure class="photo-item" data-category="travel">
+        <img src="images/photo5.jpg" alt="Describe your photo here">
+        <figcaption>
+          <span class="photo-tag">Travel</span>
+          <p class="photo-title">Conference Walk</p>
+          <span class="photo-meta">Spring 2026</span>
+        </figcaption>
+      </figure>
+
+      <!-- Photo 6 -->
+      <figure class="photo-item" data-category="life">
+        <img src="images/photo6.jpg" alt="Describe your photo here">
+        <figcaption>
+          <span class="photo-tag">Everyday</span>
+          <p class="photo-title">Coffee & Papers</p>
+          <span class="photo-meta">Feb 2026</span>
+        </figcaption>
+      </figure>
+
+    </section>
+  </main>
+
+  <!-- Full-Screen Lightbox Modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lightbox-close" class="lightbox-close" aria-label="Close">&times;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Your Name &bull; <a href="index.html">Back to Home</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
